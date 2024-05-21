@@ -1,0 +1,314 @@
+/* styles.css */
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fff;
+  color: #000;
+}
+
+.container {
+  text-align: center;
+  max-width: 800px;
+  margin: 3600px auto 0;
+  padding: 800px;
+}
+
+/* Стилі для навігаційного меню */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+nav ul li a:hover {
+  color: #666;
+}
+
+.sign-out-btn {
+  background-color: #f44336;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.sign-out-btn:hover {
+  background-color: #d32f2f; /
+}
+
+.profile-link {
+  text-decoration: none;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.profile-link:hover {
+  background-color: #45a049;
+  color: white;
+}
+
+/* styles.css */
+.header {
+  background-color: #fff;
+  padding: 1px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Підняття над іншими елементами */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-link {
+  text-decoration: none;
+  color: #333;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.header__menu {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.header__menu li {
+  margin-right: 20px;
+}
+
+.header__menu li:last-child {
+  margin-right: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: #333;
+}
+
+.menu-btn-open {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .header__menu {
+    display: none;
+  }
+
+  .menu-btn-open {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+}
+
+.task-manager {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.add-task {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.add-task input[type="text"],
+.add-task input[type="date"],
+.add-task select {
+  flex: 1;
+  margin-right: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.add-task button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-task button:hover {
+  background-color: #45a049;
+}
+
+.task-list .completed {
+  background-color: #d4edda;
+}
+
+.task-list {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.task-list th,
+.task-list td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.task-list th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+.task-list tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.task-list tr:hover {
+  background-color: #9b9e93;
+}
+
+.task-list button {
+  padding: 8px 16px;
+  background-color: #adbb9b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.events-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.event-form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.event-form input[type="text"],
+.event-form input[type="date"],
+.event-form input[type="number"] {
+  flex: 1;
+  margin-right: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.event-form button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.event-form button:hover {
+  background-color: #45a049;
+}
+
+.event-list {
+  width: 100%;
+}
+
+.event-list h2 {
+  margin-bottom: 10px;
+}
+
+.event-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.event-list li {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.event-list li p {
+  margin: 5px 0;
+}
+
+.event-list li:hover {
+  background-color: #f2f2f2;
+}
+
+.event-list li button {
+  padding: 8px 16px;
+  background-color: #adbb9b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.event-list li button:hover {
+  background-color: #8a9a7b;
+}
+.events-list {
+  max-width: 1000px; /* Збільшено максимальну ширину */
+  margin: 3600px auto 0;
+  padding: 800px;
+  background-color: #fff;
+}
+
+.event-item {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.event-item p {
+  margin: 5px 0;
+}
+
+.event-item p strong {
+  margin-right: 5px;
+}
+
